@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configurations XML_version="1.2" id="configurations_0">
+    <configuration XML_version="1.2" id="configuration_0">
+        <instance XML_version="1.2" desc="Texas Instruments XDS2xx USB Debug Probe" href="connections/TIXDS2XXUSB_Connection.xml" id="Texas Instruments XDS2xx USB Debug Probe" xml="TIXDS2XXUSB_Connection.xml" xmlpath="connections"/>
+        <connection XML_version="1.2" id="Texas Instruments XDS2xx USB Debug Probe">
+            <instance XML_version="1.2" href="drivers/tixds560icepick_d.xml" id="drivers" xml="tixds560icepick_d.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/tixds560arm9.xml" id="drivers" xml="tixds560arm9.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/tixds560cs_dap.xml" id="drivers" xml="tixds560cs_dap.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/tixds560cortexM.xml" id="drivers" xml="tixds560cortexM.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/tixds560cs_child.xml" id="drivers" xml="tixds560cs_child.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/tixds560c66xx.xml" id="drivers" xml="tixds560c66xx.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/tixds560dap_pc.xml" id="drivers" xml="tixds560dap_pc.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/tixds560cortexA15.xml" id="drivers" xml="tixds560cortexA15.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/tixds560csstm.xml" id="drivers" xml="tixds560csstm.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/tixds560etbcs.xml" id="drivers" xml="tixds560etbcs.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/tixds560pru.xml" id="drivers" xml="tixds560pru.xml" xmlpath="drivers"/>
+            <property Type="choicelist" Value="0" id="The JTAG TCLK Frequency (MHz)">
+                <choice Name="Fixed with user specified faster value" value="SPECIFIC">
+                    <property Type="stringfield" Value="10.368MHz" id="-- Enter a value from 0.5MHz to 20.0MHz"/>
+                </choice>
+            </property>
+            <platform XML_version="1.2" id="platform_0">
+                <instance XML_version="1.2" desc="GPEVM_AM572X_SiRevA" href="boards/gpevm_am572x_SiRevA.xml" id="GPEVM_AM572X_SiRevA" xml="gpevm_am572x_SiRevA.xml" xmlpath="boards"/>
+                <board XML_version="1.2" description="AM572x General Purpose Evaluation Module with silicon revision 1.1" id="GPEVM_AM572X_SiRevA">
+                    <device HW_revision="1.1" XML_version="1.2" description="AM5728 - Cortex A15 Embedded Processor&#10;Silicon Revision 1.1" id="AM5728_RevA_0" partnum="AM5728_RevA" simulation="no">
+                        <router HW_revision="1.0" XML_version="1.2" description="ICEPick_D Router" id="IcePick_D_0" isa="ICEPICK_D">
+                            <subpath id="dap">
+                                <router HW_revision="1.0" XML_version="1.2" description="CS_DAP Router" id="CS_DAP_0" isa="CS_DAP">
+                                    <property Type="filepathfield" Value="/opt/ti/ccs910/ccs/ccs_base/common/targetdb/boards/../../../emulation/boards/am572x/gel/AM572x_dap_startup.gel" desc="GEL File_0" id="GEL File"/>
+                                </router>
+                            </subpath>
+                            <property Type="filepathfield" Value="/opt/ti/ccs910/ccs/ccs_base/common/targetdb/boards/../../../emulation/boards/am572x/gel/AM572x_ICEPickD_Utility.gel" desc="GEL File_1" id="GEL File"/>
+                        </router>
+                    </device>
+                </board>
+            </platform>
+        </connection>
+    </configuration>
+</configurations>
