@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  This file conforms to the DTD xdc/bld/build.dtd -->
+<package name="configPkg" version="" producerId="undefined">
+    <units>
+    </units>
+    <sources>
+        <srcFile name="package/cfg/app_pa15fg.c"/>
+    </sources>
+    <configscripts>
+        <srcFile name="/home/dmitrii/ti/ccs910/workspace_v9/TestGPIOIsr/app.cfg"/>
+    </configscripts>
+    <makefiles>
+        <srcFile name="package.mak" src="package.bld"/>
+        <srcFile name="package/package.xdc.dep" src="package.xdc"/>
+        <srcFile name="package/cfg/app_pa15fg.mak" src="package.bld"/>
+        <srcFile name="package/cfg/app_pa15fg.oa15fg.dep" src="package/cfg/app_pa15fg.c"/>
+        <srcFile name="package/cfg/app_pa15fg.dep" src="package/cfg/app_pa15fg.cfg"/>
+        <srcFile name="package/cfg/app.xa15fg.mak" src="package.bld"/>
+        <srcFile name="package/rel/configPkg.tar.dep" src="package/rel/configPkg.xdc.inc"/>
+    </makefiles>
+    <targets>
+        <target name="gnu.targets.arm.A15F"
+            version="gnu.targets.arm.A15F{1,0,7.2,1"
+            rawVersion="7.2.1"
+            platform="ti.platforms.sdp5430"
+            isa="v7A15"
+            suffix="a15fg"
+            rootDir="/home/dmitrii/ti/ccs910/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major"
+            os="undefined"
+            rts="gnu.targets.arm.rtsv7A">
+            <model endian="little"
+                codeModel="undefined"
+                dataModel="undefined"/>
+        </target>
+    </targets>
+    <libraries>
+    </libraries>
+    <configurations>
+    <configuration name="app"
+        pname="app.pa15fg"
+        target="gnu.targets.arm.A15F"
+        platform="ti.platforms.evmAM572X"
+        profile="release"
+        isPartial="false"
+        xCfgScript="package/cfg/app_pa15fg.cfg"
+        xCfgPrefix="package/cfg/app_pa15fg"
+        cfgScript="/home/dmitrii/ti/ccs910/workspace_v9/TestGPIOIsr/app.cfg"
+        cfgArgs="null"
+        />
+    </configurations>
+    <executables>
+    <executable name="app"
+        pname="app.xa15fg"
+        target="gnu.targets.arm.A15F"
+        platform="ti.platforms.evmAM572X"
+        profile="release"
+        xCfgScript="package/cfg/app_pa15fg.cfg"
+        xCfgPrefix="package/cfg/app_pa15fg"
+        cfgScript="/home/dmitrii/ti/ccs910/workspace_v9/TestGPIOIsr/app.cfg"
+        cfgArgs="null"
+        />
+    </executables>
+    <tests>
+    <test exeName="app.xa15fg"
+        args=""
+        groupName="app.xa15fg"
+        refOutput="undefined"
+        refExitCode="0"
+        execArgs=""
+        />
+    </tests>
+    <releases relDir="package/rel/">
+    <release name="configPkg"
+        pname="configPkg.tar"
+        label="default"
+    >
+        <file name="package/package.bld.xml"/>
+        <file name="package/build.cfg"/>
+        <file name="package/package.xdc.inc"/>
+    </release>
+    </releases>
+    <repositories>
+    </repositories>
+</package>
