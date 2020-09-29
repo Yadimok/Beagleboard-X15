@@ -1,0 +1,35 @@
+arm_IntrinsicsSupport.o: \
+ /home/dmitrii/ti/bios_6_76_03_01/packages/ti/sysbios/family/arm/IntrinsicsSupport.c \
+ /home/dmitrii/ti/ccs1000/xdctools_3_61_00_16_core/packages/xdc/std.h \
+ /home/dmitrii/ti/ccs910/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major/lib/gcc/arm-none-eabi/7.2.1/include/stdarg.h \
+ /home/dmitrii/ti/ccs910/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major/lib/gcc/arm-none-eabi/7.2.1/include/stddef.h \
+ /home/dmitrii/ti/bios_6_76_03_01/packages/gnu/targets/arm/std.h \
+ /home/dmitrii/ti/bios_6_76_03_01/packages/gnu/targets/arm/A15F.h \
+ /home/dmitrii/ti/ccs1000/xdctools_3_61_00_16_core/packages/gnu/targets/std.h \
+ /home/dmitrii/ti/bios_6_76_03_01/packages/gnu/targets/arm//libs/install-native/arm-none-eabi/include/stdint.h \
+ /home/dmitrii/ti/bios_6_76_03_01/packages/gnu/targets/arm//libs/install-native/arm-none-eabi/include/machine/_default_types.h \
+ /home/dmitrii/ti/bios_6_76_03_01/packages/gnu/targets/arm//libs/install-native/arm-none-eabi/include/sys/features.h \
+ /home/dmitrii/ti/bios_6_76_03_01/packages/gnu/targets/arm//libs/install-native/arm-none-eabi/include/_newlib_version.h \
+ /home/dmitrii/ti/bios_6_76_03_01/packages/gnu/targets/arm//libs/install-native/arm-none-eabi/include/sys/_intsup.h \
+ /home/dmitrii/ti/bios_6_76_03_01/packages/gnu/targets/arm//libs/install-native/arm-none-eabi/include/sys/_stdint.h \
+ /home/dmitrii/ti/bios_6_76_03_01/packages/ti/sysbios/family/arm/package/internal/IntrinsicsSupport.xdc.h \
+ /home/dmitrii/ti/bios_6_76_03_01/packages/ti/sysbios/family/arm/IntrinsicsSupport.h \
+ /home/dmitrii/ti/ccs1000/xdctools_3_61_00_16_core/packages/xdc/runtime/xdc.h \
+ /home/dmitrii/ti/ccs1000/xdctools_3_61_00_16_core/packages/xdc/runtime/Types.h \
+ /home/dmitrii/ti/ccs1000/xdctools_3_61_00_16_core/packages/xdc/runtime/Types__prologue.h \
+ /home/dmitrii/ti/ccs1000/xdctools_3_61_00_16_core/packages/xdc/runtime/package/package.defs.h \
+ /home/dmitrii/ti/ccs1000/xdctools_3_61_00_16_core/packages/xdc/runtime/Types__epilogue.h \
+ /home/dmitrii/ti/bios_6_76_03_01/packages/ti/sysbios/family/arm/package/package.defs.h \
+ /home/dmitrii/ti/bios_6_76_03_01/packages/ti/sysbios/interfaces/IIntrinsicsSupport.h \
+ /home/dmitrii/ti/bios_6_76_03_01/packages/ti/sysbios/interfaces/package/package.defs.h \
+ /home/dmitrii/ti/ccs1000/xdctools_3_61_00_16_core/packages/xdc/runtime/IModule.h \
+ /home/dmitrii/ti/ccs1000/xdctools_3_61_00_16_core/packages/xdc/runtime/IHeap.h \
+ /home/dmitrii/ti/ccs1000/xdctools_3_61_00_16_core/packages/xdc/runtime/IInstance.h \
+ /home/dmitrii/ti/ccs1000/xdctools_3_61_00_16_core/packages/xdc/runtime/Error.h \
+ /home/dmitrii/ti/ccs1000/xdctools_3_61_00_16_core/packages/xdc/runtime/Error__prologue.h \
+ /home/dmitrii/ti/ccs1000/xdctools_3_61_00_16_core/packages/xdc/runtime/Main.h \
+ /home/dmitrii/ti/ccs1000/xdctools_3_61_00_16_core/packages/xdc/runtime/IGateProvider.h \
+ /home/dmitrii/ti/ccs1000/xdctools_3_61_00_16_core/packages/xdc/runtime/package/Main_Module_GateProxy.h \
+ /home/dmitrii/ti/ccs1000/xdctools_3_61_00_16_core/packages/xdc/runtime/Error__epilogue.h \
+ /home/dmitrii/ti/ccs1000/xdctools_3_61_00_16_core/packages/xdc/runtime/Memory.h \
+ /home/dmitrii/ti/ccs1000/xdctools_3_61_00_16_core/packages/xdc/runtime/package/Memory_HeapProxy.h

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?ccsproject version="1.0"?>
+<projectOptions>
+	<ccsVersion value="9.1.0"/>
+	<deviceVariant value="TMS192C2026.AM5728_RevA.GPEVM_AM572X_SiRevA"/>
+	<deviceFamily value="PRU"/>
+	<deviceEndianness value="little"/>
+	<codegenToolVersion value="2.3.2"/>
+	<isElfFormat value="true"/>
+	<linkerCommandFile value="AM57xx_PRU.cmd"/>
+	<rts value="libc.a"/>
+	<createSlaveProjects value=""/>
+	<templateProperties value="id=com.ti.common.project.core.emptyProjectWithMainTemplate"/>
+	<filesToOpen value="main.c"/>
+	<isTargetManual value="false"/>
+</projectOptions>
