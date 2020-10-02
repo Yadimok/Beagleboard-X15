@@ -21,12 +21,8 @@
 /* BIOS Header files */
 #include <ti/sysbios/BIOS.h>
 
-
-uint32_t gpio_base_address2 = CSL_MPU_GPIO2_REGS;
-uint32_t gpio_pin2[] = {25, 28};
-
 uint32_t gpio_base_address3 = CSL_MPU_GPIO3_REGS;
-uint32_t gpio_pin3[] = {7};
+uint32_t gpio_pin3[] = {7, 8, 9};
 
 
 extern unsigned int TestLEDGPIO3_7_image_0[54];
@@ -52,13 +48,6 @@ Int main()
 
     Board_init(boardCfg);
 
-    /*Enable GPIO2 clock*/
-    HW_WR_REG32(CSL_MPU_L4PER_CM_CORE_REGS+CSL_L4PER_CM_CORE_COMPONENT_CM_L4PER_GPIO2_CLKCTRL_REG,0x102);
-    while ((HW_RD_REG32(CSL_MPU_L4PER_CM_CORE_REGS+CSL_L4PER_CM_CORE_COMPONENT_CM_L4PER_GPIO2_CLKCTRL_REG) & (0x00030000U)) != 0x0)
-    {
-        ;
-    }
-
     /*Enable GPIO3 clock*/
     HW_WR_REG32(CSL_MPU_L4PER_CM_CORE_REGS+CSL_L4PER_CM_CORE_COMPONENT_CM_L4PER_GPIO3_CLKCTRL_REG,0x102);
     while ((HW_RD_REG32(CSL_MPU_L4PER_CM_CORE_REGS+CSL_L4PER_CM_CORE_COMPONENT_CM_L4PER_GPIO3_CLKCTRL_REG) & (0x00030000U)) != 0x0)
@@ -66,24 +55,18 @@ Int main()
         ;
     }
 
-    /*Reset GPIO*/
-    GPIOModuleReset(gpio_base_address2);
     GPIOModuleReset(gpio_base_address3);
-
-    /*Enable GPIO*/
-    GPIOModuleEnable(gpio_base_address2);
     GPIOModuleEnable(gpio_base_address3);
 
-    GPIOIntTypeSet(gpio_base_address2, gpio_pin2[0], GPIO_INT_TYPE_RISE_EDGE);
+    GPIOIntTypeSet(gpio_base_address3, gpio_pin3[0], GPIO_INT_TYPE_RISE_EDGE);
 
     /*Set pin direction*/
-    GPIODirModeSet(gpio_base_address2, gpio_pin2[0], GPIO_DIR_INPUT);  //25 - input
-    GPIODirModeSet(gpio_base_address2, gpio_pin2[1], GPIO_DIR_OUTPUT); //28 - output
+    GPIODirModeSet(gpio_base_address3, gpio_pin3[0], GPIO_DIR_INPUT);
+    GPIODirModeSet(gpio_base_address3, gpio_pin3[1], GPIO_DIR_INPUT);
+    GPIODirModeSet(gpio_base_address3, gpio_pin3[2], GPIO_DIR_OUTPUT);
 
-    GPIODirModeSet(gpio_base_address3, gpio_pin3[0], GPIO_DIR_OUTPUT); //7 - output
-
-    GPIOPinWrite(gpio_base_address2, gpio_pin2[0], 0);
-    GPIOPinWrite(gpio_base_address2, gpio_pin2[1], 0);
+    GPIOPinWrite(gpio_base_address3, gpio_pin3[0], 0);
+    GPIOPinWrite(gpio_base_address3, gpio_pin3[1], 0);
     GPIOPinWrite(gpio_base_address3, gpio_pin3[0], 0);
 
 
