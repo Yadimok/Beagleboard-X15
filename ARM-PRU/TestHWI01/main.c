@@ -67,7 +67,7 @@ Int main()
 
     GPIOPinWrite(gpio_base_address3, gpio_pin3[0], 0);
     GPIOPinWrite(gpio_base_address3, gpio_pin3[1], 0);
-    GPIOPinWrite(gpio_base_address3, gpio_pin3[0], 0);
+    GPIOPinWrite(gpio_base_address3, gpio_pin3[2], 0);
 
 
     Task_Handle task;
