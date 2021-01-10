@@ -1,6 +1,6 @@
 # Beagleboard-X15 projects
 
-`IDE - Code Composer Studio 9.1/9.3. Processor - Sitara AM5729.`
+`IDE - Code Composer Studio 9.1/9.3. Processor - Sitara AM572X.`
 
 1. TestGPIOIsr - Registers a `GPIO` interrupt on a specific pin.
 2. TestWriteSD - Writing large data to `mSD` card's.
@@ -9,3 +9,6 @@
 	3.1 TestHW01 - Firmware for `ARM` core
 
 	3.2 TestLEDGPIO3_7 - Firmware for `PRU` core
+4. docs:
+	1. AM572x_Datasheet.pdf
+	2. AM572x_TRM.pdf
