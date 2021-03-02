@@ -10,7 +10,8 @@
 
 	3.2 TestLEDGPIO3_7 - Firmware for `PRU` core
 	
-	Generator PRU:
+	
+	<b>Generator PRU:</b>
 
 	`/home/XXX/ti/ti-cgt-pru_2.3.2/bin/1`
 
