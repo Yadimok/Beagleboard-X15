@@ -11,7 +11,7 @@
 	3.2 TestLEDGPIO3_7 - Firmware for `PRU` core
 	
 	
-	<b>Generator PRU:</b>
+	<b>Generator hex PRU data:</b>
 
 	`XXX@XXX:~/ti/ti-cgt-pru_2.3.2/bin$ ./hexpru -h --array`
 	
